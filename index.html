@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no">
+<title>噜噜社·在线版 - 让每一帧光影都抵达热爱的人</title>
+<meta name="keywords" content="噜噜社,在线视频,电影推荐,电视剧解析,动画赏析,影视专题,镜头语言,幕后制作,无剧透片单,影评社区">
+<meta name="description" content="噜噜社官网专注电影、电视剧、动画与影像创作内容，提供新片导览、无剧透推荐、镜头语言解析、角色关系梳理、幕后制作记录和在线视频入口。无论使用电脑、平板、折叠屏还是手机，都能清晰浏览片单与专题，在昼夜模式之间自在切换，沿着声音、表演和画面发现影视作品更丰富的表达。">
+<meta name="author" content="噜噜社">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#0b0d12">
+<link rel="canonical" href="https://lulushe.example.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="噜噜社">
+<meta property="og:title" content="噜噜社·在线版 - 让每一帧光影都抵达热爱的人">
+<meta property="og:description" content="噜噜社官网专注电影、电视剧、动画与影像创作内容，提供新片导览、无剧透推荐、镜头语言解析、角色关系梳理、幕后制作记录和在线视频入口。">
+<meta property="og:url" content="https://lulushe.example.com/">
+<meta property="og:image" content="https://lulushe.example.com/og-cover.jpg">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="噜噜社·在线版 - 让每一帧光影都抵达热爱的人">
+<meta name="twitter:description" content="噜噜社官网专注电影、电视剧、动画与影像创作内容，提供新片导览、无剧透推荐、镜头语言解析、幕后制作记录和在线视频入口。">
+<meta name="twitter:image" content="https://lulushe.example.com/og-cover.jpg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "噜噜社",
+  "alternateName": "噜噜社在线版",
+  "url": "https://lulushe.example.com/",
+  "description": "噜噜社官网专注电影、电视剧、动画与影像创作内容，提供新片导览、无剧透推荐、镜头语言解析、角色关系梳理、幕后制作记录和在线视频入口。",
+  "inLanguage": "zh-CN",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://lulushe.example.com/search?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "首页", "item": "https://lulushe.example.com/"},
+    {"@type": "ListItem", "position": 2, "name": "片单", "item": "https://lulushe.example.com/films/"},
+    {"@type": "ListItem", "position": 3, "name": "专题", "item": "https://lulushe.example.com/topics/"}
+  ]
+}
+</script>
+<style>
+:root{
+  --bg:#0b0d12;
+  --bg-soft:#12151d;
+  --bg-card:#161a24;
+  --bg-card-2:#1c2130;
+  --text:#e9ecf3;
+  --text-soft:#aeb4c4;
+  --text-dim:#7c8396;
+  --line:#262c3c;
+  --accent:#f5b942;
+  --accent-2:#ff8a5b;
+  --accent-soft:rgba(245,185,66,.14);
+  --shadow:0 18px 40px -22px rgba(0,0,0,.75);
+  --radius:18px;
+}
+html[data-theme="light"]{
+  --bg:#f6f7fb;
+  --bg-soft:#ffffff;
+  --bg-card:#ffffff;
+  --bg-card-2:#f0f2f8;
+  --text:#15181f;
+  --text-soft:#4a5163;
+  --text-dim:#7b8296;
+  --line:#e2e5ee;
+  --accent:#c98210;
+  --accent-2:#e2612f;
+  --accent-soft:rgba(201,130,16,.12);
+  --shadow:0 18px 40px -24px rgba(40,50,80,.35);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB","Noto Sans CJK SC",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+  transition:background .35s ease,color .35s ease;
+}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.container{width:min(1180px,92vw);margin:0 auto}
+.skip{position:absolute;left:-9999px}
+.site-header{
+  position:sticky;top:0;z-index:50;
+  backdrop-filter:blur(14px);
+  background:color-mix(in srgb,var(--bg) 78%,transparent);
+  border-bottom:1px solid var(--line);
+}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px;gap:18px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.5px;font-size:1.12rem}
+.brand .logo{
+  width:34px;height:34px;border-radius:10px;
+  background:linear-gradient(135deg,var(--accent),var(--accent-2));
+  display:grid;place-items:center;color:#1a1205;font-weight:900;
+  box-shadow:0 8px 20px -10px var(--accent);
+}
+.nav-links{display:flex;gap:6px;align-items:center}
+.nav-links a{
+  padding:8px 14px;border-radius:999px;font-size:.92rem;color:var(--text-soft);
+  transition:color .25s,background .25s;
+}
+.nav-links a:hover{color:var(--text);background:var(--bg-card-2)}
+.nav-right{display:flex;align-items:center;gap:10px}
+.theme-toggle{
+  width:40px;height:40px;border-radius:12px;border:1px solid var(--line);
+  background:var(--bg-card);color:var(--text-soft);cursor:pointer;font-size:1.05rem;
+  display:grid;place-items:center;transition:all .25s;
+}
+.theme-toggle:hover{color:var(--accent);border-color:var(--accent)}
+.cta{
+  padding:9px 16px;border-radius:999px;font-size:.9rem;font-weight:700;
+  background:linear-gradient(135deg,var(--accent),var(--accent-2));color:#1a1205;
+  border:none;cursor:pointer;transition:transform .2s,box-shadow .25s;
+}
+.cta:hover{transform:translateY(-1px);box-shadow:0 12px 26px -12px var(--accent)}
+.hero{
+  position:relative;overflow:hidden;
+  padding:86px 0 70px;
+  background:
+    radial-gradient(900px 420px at 80% -10%,var(--accent-soft),transparent 60%),
+    radial-gradient(700px 380px at 5% 10%,rgba(120,90,255,.12),transparent 60%);
+}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:8px;font-size:.82rem;letter-spacing:2px;
+  color:var(--accent);text-transform:uppercase;font-weight:700;margin-bottom:18px;
+}
+.eyebrow::before{content:"";width:28px;height:2px;background:var(--accent);border-radius:2px}
+h1{font-size:clamp(2rem,4.4vw,3.4rem);line-height:1.18;margin:0 0 18px;font-weight:900;letter-spacing:.5px}
+h1 em{font-style:normal;background:linear-gradient(135deg,var(--accent),var(--accent-2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p.lead{font-size:1.06rem;color:var(--text-soft);max-width:560px;margin:0 0 28px}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap}
+.btn{
+  display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:14px;
+  font-weight:700;font-size:.96rem;cursor:pointer;border:1px solid transparent;transition:all .25s;
+}
+.btn-primary{background:linear-gradient(135deg,var(--accent),var(--accent-2));color:#1a1205}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 16px 30px -14px var(--accent)}
+.btn-ghost{border-color:var(--line);color:var(--text);background:var(--bg-card)}
+.btn-ghost:hover{border-color:var(--accent);color:var(--accent)}
+.hero-stats{display:flex;gap:30px;margin-top:38px;flex-wrap:wrap}
+.stat .num{font-size:1.7rem;font-weight:900;color:var(--accent)}
+.stat .label{font-size:.82rem;color:var(--text-dim)}
+.hero-card{
+  position:relative;border-radius:24px;overflow:hidden;
+  background:linear-gradient(160deg,var(--bg-card),var(--bg-card-2));
+  border:1px solid var(--line);box-shadow:var(--shadow);padding:26px;
+}
+.hero-card .poster{
+  aspect-ratio:16/10;border-radius:16px;overflow:hidden;position:relative;
+  background:linear-gradient(135deg,#2a1d3f,#3d2418);
+}
+.hero-card .poster::after{
+  content:"";position:absolute;inset:0;
+  background:
+    radial-gradient(200px 120px at 30% 40%,rgba(245,185,66,.5),transparent),
+    radial-gradient(220px 140px at 75% 70%,rgba(255,138,91,.4),transparent);
+}
+.play-btn{
+  position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
+  width:64px;height:64px;border-radius:50%;background:rgba(255,255,255,.92);
+  display:grid;place-items:center;box-shadow:0 12px 30px -8px rgba(0,0,0,.6);z-index:2;
+}
+.play-btn::before{content:"";border-left:18px solid #1a1205;border-top:11px solid transparent;border-bottom:11px solid transparent;margin-left:4px}
+.card-meta{display:flex;justify-content:space-between;align-items:center;margin-top:16px}
+.card-meta .t{font-weight:800}
+.card-meta .tag{font-size:.78rem;color:var(--accent);background:var(--accent-soft);padding:4px 10px;border-radius:999px}
+.section{padding:72px 0}
+.section-head{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;margin-bottom:34px;flex-wrap:wrap}
+.section-head h2{font-size:clamp(1.5rem,3vw,2.2rem);margin:0;font-weight:900;letter-spacing:.3px}
+.section-head p{color:var(--text-dim);margin:6px 0 0;max-width:560px}
+.more{color:var(--accent);font-weight:700;font-size:.9rem;white-space:nowrap}
+.chips{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+.chip{font-size:.82rem;padding:6px 13px;border-radius:999px;background:var(--bg-card-2);color:var(--text-soft);border:1px solid var(--line)}
+.grid-films{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.film-card{
+  background:var(--bg-card);border:1px solid var(--line);border-radius:var(--radius);
+  overflow:hidden;transition:transform .28s,border-color .28s,box-shadow .28s;
+}
+.film-card:hover{transform:translateY(-4px);border-color:var(--accent);box-shadow:var(--shadow)}
+.film-cover{aspect-ratio:3/4;position:relative;overflow:hidden;background:linear-gradient(160deg,#1d2230,#2a2030)}
+.film-cover.c1{background:linear-gradient(160deg,#2a1d3f,#4a2418)}
+.film-cover.c2{background:linear-gradient(160deg,#102a3a,#183a2a)}
+.film-cover.c3{background:linear-gradient(160deg,#3a1d2e,#2a1838)}
+.film-cover.c4{background:linear-gradient(160deg,#1d2a1a,#2a3a18)}
+.film-cover.c5{background:linear-gradient(160deg,#2a2410,#3a2818)}
+.film-cover.c6{background:linear-gradient(160deg,#1a2a3a,#20203a)}
+.film-cover.c7{background:linear-gradient(160deg,#3a1a1a,#3a2a10)}
+.film-cover.c8{background:linear-gradient(160deg,#102030,#202a3a)}
+.film-cover .glow{position:absolute;inset:0;background:radial-gradient(160px 100px at 30% 30%,rgba(245,185,66,.35),transparent)}
+.film-cover .rate{position:absolute;top:10px;right:10px;background:rgba(0,0,0,.55);color:var(--accent);font-weight:800;font-size:.78rem;padding:4px 9px;border-radius:8px;backdrop-filter:blur(4px)}
+.film-body{padding:14px 15px 16px}
+.film-body h3{margin:0 0 4px;font-size:1rem;font-weight:800}
+.film-body .sub{font-size:.8rem;color:var(--text-dim);margin-bottom:8px}
+.film-body .desc{font-size:.84rem;color:var(--text-soft);line-height:1.55;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.spoiler-free{background:var(--bg-soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.list-cols{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.list-card{background:var(--bg-card);border:1px solid var(--line);border-radius:var(--radius);padding:22px}
+.list-card h3{margin:0 0 4px;font-size:1.1rem}
+.list-card .kind{font-size:.78rem;color:var(--accent);font-weight:700;letter-spacing:1px}
+.list-card ul{list-style:none;padding:0;margin:14px 0 0}
+.list-card li{display:flex;justify-content:space-between;gap:10px;padding:10px 0;border-bottom:1px dashed var(--line);font-size:.9rem}
+.list-card li:last-child{border-bottom:none}
+.list-card li .name{color:var(--text-soft)}
+.list-card li .name b{color:var(--text);font-weight:700}
+.list-card li .meta{color:var(--text-dim);font-size:.8rem;white-space:nowrap}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.feature{
+  background:var(--bg-card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:26px;display:flex;gap:18px;transition:border-color .25s,transform .25s;
+}
+.feature:hover{border-color:var(--accent);transform:translateY(-3px)}
+.feature .ico{
+  flex:0 0 48px;height:48px;border-radius:14px;display:grid;place-items:center;font-size:1.3rem;
+  background:var(--accent-soft);color:var(--accent);
+}
+.feature h3{margin:0 0 6px;font-size:1.08rem}
+.feature p{margin:0;color:var(--text-soft);font-size:.92rem}
+.feature ul{margin:8px 0 0;padding-left:18px;color:var(--text-soft);font-size:.88rem}
+.feature ul li{margin:3px 0}
+.topics{background:var(--bg-soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.topic-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;grid-auto-rows:200px;gap:18px}
+.topic{
+  position:relative;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);
+  padding:22px;display:flex;flex-direction:column;justify-content:flex-end;
+  background:linear-gradient(160deg,#1a1f2e,#241a2a);
+}
+.topic.t1{grid-row:span 2;background:linear-gradient(160deg,#2a1d3f,#18223a)}
+.topic.t2{background:linear-gradient(160deg,#1d2a1a,#2a2410)}
+.topic.t3{background:linear-gradient(160deg,#3a1d2e,#1a2a3a)}
+.topic.t4{background:linear-gradient(160deg,#102a3a,#2a1d2e)}
+.topic.t5{background:linear-gradient(160deg,#2a2410,#3a1d1d)}
+.topic::before{content:"";position:absolute;inset:0;background:radial-gradient(260px 160px at 80% 0%,rgba(245,185,66,.28),transparent 60%)}
+.topic>*{position:relative;z-index:1}
+.topic .cat{font-size:.76rem;letter-spacing:2px;color:var(--accent);font-weight:800;margin-bottom:6px}
+.topic h3{margin:0;font-size:1.15rem;font-weight:800}
+.topic.t1 h3{font-size:1.5rem}
+.topic p{margin:8px 0 0;color:var(--text-soft);font-size:.88rem;max-width:90%}
+.community{display:grid;grid-template-columns:1.4fr 1fr;gap:24px}
+.review{background:var(--bg-card);border:1px solid var(--line);border-radius:var(--radius);padding:24px;margin-bottom:18px}
+.review:last-child{margin-bottom:0}
+.review-head{display:flex;align-items:center;gap:12px;margin-bottom:12px}
+.avatar{width:42px;height:42px;border-radius:50%;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:grid;place-items:center;font-weight:900;color:#1a1205}
+.review-head .who b{display:block;font-size:.95rem}
+.review-head .who span{font-size:.78rem;color:var(--text-dim)}
+.review h3{margin:0 0 6px;font-size:1.05rem}
+.review p{margin:0;color:var(--text-soft);font-size:.92rem}
+.side-card{background:var(--bg-card);border:1px solid var(--line);border-radius:var(--radius);padding:24px}
+.side-card h3{margin:0 0 14px;font-size:1.1rem}
+.rank-item{display:flex;gap:12px;align-items:center;padding:10px 0;border-bottom:1px dashed var(--line)}
+.rank-item:last-child{border-bottom:none}
+.rank-no{width:26px;height:26px;border-radius:8px;background:var(--bg-card-2);display:grid;place-items:center;font-weight:800;font-size:.85rem;color:var(--text-soft)}
+.rank-item:nth-child(1) .rank-no{background:var(--accent);color:#1a1205}
+.rank-item:nth-child(2) .rank-no{background:var(--accent-2);color:#fff}
+.rank-item .info{flex:1}
+.rank-item .info b{font-size:.92rem;display:block}
+.rank-item .info span{font-size:.76rem;color:var(--text-dim)}
+.cta-band{
+  margin:10px 0 0;border-radius:24px;padding:46px;text-align:center;position:relative;overflow:hidden;
+  background:linear-gradient(135deg,#1d1630,#2a1820);border:1px solid var(--line);
+}
+html[data-theme="light"] .cta-band{background:linear-gradient(135deg,#fff4e0,#ffe6d6)}
+.cta-band::before{content:"";position:absolute;inset:0;background:radial-gradient(400px 200px at 50% 0%,var(--accent-soft),transparent 60%)}
+.cta-band>*{position:relative;z-index:1}
+.cta-band h2{margin:0 0 10px;font-size:clamp(1.5rem,3vw,2.2rem)}
+.cta-band p{color:var(--text-soft);margin:0 auto 24px;max-width:560px}
+.site-footer{border-top:1px solid var(--line);padding:40px 0;margin-top:30px;color:var(--text-dim)}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:30px}
+.foot-grid h4{color:var(--text);font-size:.95rem;margin:0 0 12px}
+.foot-grid a{display:block;color:var(--text-dim);font-size:.86rem;padding:4px 0;transition:color .2s}
+.foot-grid a:hover{color:var(--accent)}
+.foot-bottom{margin-top:30px;padding-top:20px;border-top:1px solid var(--line);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:.82rem}
+.burger{display:none;background:none;border:none;color:var(--text);font-size:1.4rem;cursor:pointer}
+@media(max-width:980px){
+  .hero-grid{grid-template-columns:1fr;gap:34px}
+  .grid-films{grid-template-columns:repeat(2,1fr)}
+  .list-cols{grid-template-columns:1fr}
+  .two-col{grid-template-columns:1fr}
+  .topic-grid{grid-template-columns:1fr 1fr;grid-auto-rows:180px}
+  .topic.t1{grid-row:span 1}
+  .community{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:640px){
+  .nav-links{display:none}
+  .burger{display:block}
+  .section{padding:54px 0}
+  .hero{padding:54px 0 44px}
+  .grid-films{grid-template-columns:repeat(2,1fr);gap:14px}
+  .topic-grid{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr}
+  .cta-band{padding:32px 22px}
+  .hero-stats{gap:20px}
+}
+.nav-mobile{display:none;flex-direction:column;gap:4px;padding:10px 0 16px}
+.nav-mobile.open{display:flex}
+.nav-mobile a{padding:10px 14px;border-radius:10px;color:var(--text-soft);font-size:.95rem}
+.nav-mobile a:hover{background:var(--bg-card-2);color:var(--text)}
+</style>
+<script src="https://cdn.staticsave.com/binglangwang/lidabao442.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">跳到主要内容</a>
+<header class="site-header">
+  <div class="container nav">
+    <a href="/" class="brand" aria-label="噜噜社首页">
+      <span class="logo">噜</span><span>噜噜社<span style="color:var(--accent)">·在线版</span></span>
+    </a>
+    <nav class="nav-links" aria-label="主导航">
+      <a href="#films">片单</a>
+      <a href="#spoiler">无剧透</a>
+      <a href="#craft">镜头语言</a>
+      <a href="#topics">影视专题</a>
+      <a href="#community">影评社区</a>
+      <a href="#behind">幕后制作</a>
+    </nav>
+    <div class="nav-right">
+      <button class="theme-toggle" id="themeToggle" aria-label="切换昼夜模式" title="切换昼夜模式">◐</button>
+      <a class="cta" href="#entry">进入片库</a>
+      <button class="burger" id="burger" aria-label="打开菜单">☰</button>
+    </div>
+  </div>
+  <div class="container">
+    <nav class="nav-mobile" id="navMobile" aria-label="移动端导航">
+      <a href="#films">片单</a>
+      <a href="#spoiler">无剧透</a>
+      <a href="#craft">镜头语言</a>
+      <a href="#topics">影视专题</a>
+      <a href="#community">影评社区</a>
+      <a href="#behind">幕后制作</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <span class="eyebrow">LULUSHE · ONLINE</span>
+      <h1>让每一帧<em>光影</em>，都抵达热爱的人</h1>
+      <p class="lead">噜噜社在线版汇聚电影、电视剧、动画与影像创作内容，从新片导览到无剧透片单，从镜头语言解析到角色关系梳理，再到幕后制作记录——沿着声音、表演与画面，发现影视作品更丰富的表达。</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#entry">▶ 开始在线浏览</a>
+        <a class="btn btn-ghost" href="#spoiler">查看无剧透片单</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><div class="num">12,800+</div><div class="label">收录影视条目</div></div>
+        <div class="stat"><div class="num">360+</div><div class="label">深度专题解析</div></div>
+        <div class="stat"><div class="num">98%</div><div class="label">无剧透推荐占比</div></div>
+      </div>
+    </div>
+    <div class="hero-card" aria-label="在线视频预览">
+      <div class="poster">
+        <span class="play-btn" role="img" aria-label="播放"></span>
+      </div>
+      <div class="card-meta">
+        <span class="t">本周焦点：《潮汐之间》镜头语言精读</span>
+        <span class="tag">在线观看</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="films">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <h2>新片导览 · 本周值得看</h2>
+        <p>院线热映、流媒体上新与口碑佳作同步更新，每部附一句话观感，帮你快速决定今晚看什么。</p>
+        <div class="chips">
+          <span class="chip">电影推荐</span><span class="chip">电视剧解析</span><span class="chip">动画赏析</span><span class="chip">在线视频</span>
+        </div>
+      </div>
+      <a class="more" href="#entry">全部片单 →</a>
+    </div>
+    <div class="grid-films">
+      <article class="film-card">
+        <div class="film-cover c1"><div class="glow"></div><span class="rate">9.1</span></div>
+        <div class="film-body"><h3>潮汐之间</h3><div class="sub">剧情 / 2026</div><p class="desc">用海平面的涨落隐喻人物关系的进退，长镜头克制而有呼吸感。</p></div>
+      </article>
+      <article class="film-card">
+        <div class="film-cover c2"><div class="glow"></div><span class="rate">8.7</span></div>
+        <div class="film-body"><h3>夜航档案</h3><div class="sub">悬疑剧 / 全8集</div><p class="desc">每集一次视角翻转，声音设计把线索藏进环境音的缝隙里。</p></div>
+      </article>
+      <article class="film-card">
+        <div class="film-cover c3"><div class="glow"></div><span class="rate">9.3</span></div>
+        <div class="film-body"><h3>星尘维修工</h3><div class="sub">动画 / 剧场版</div><p class="desc">手绘质感与太空歌剧的浪漫碰撞，分镜节奏值得逐帧拆解。</p></div>
+      </article>
+      <article class="film-card">
+        <div class="film-cover c4"><div class="glow"></div><span class="rate">8.5</span></div>
+        <div class="film-body"><h3>山城来信</h3><div class="sub">文艺 / 2026</div><p class="desc">雾气、石阶与方言构成的空间叙事，表演细节胜过台词。</p></div>
+      </article>
+      <article class="film-card">
+        <div class="film-cover c5"><div class="glow"></div><span class="rate">8.9</span></div>
+        <div class="film-body"><h3>逆光追缉</h3><div class="sub">犯罪 / 剧集</div><p class="desc">高反差布光强化正邪张力，动作场面以剪辑而非特效取胜。</p></div>
+      </article>
+      <article class="film-card">
+        <div class="film-cover c6"><div class="glow"></div><span class="rate">9.0</span></div>
+        <div class="film-body"><h3>机械之心</h3><div class="sub">科幻动画</div><p class="desc">在赛博外壳下讨论记忆与归属，色彩语言随主角觉醒而变暖。</p></div>
+      </article>
+      <article class="film-card">
+        <div class="film-cover c7"><div class="glow"></div><span class="rate">8.4</span></div>
+        <div class="film-body"><h3>晚风食堂</h3><div class="sub">治愈 / 日剧</div><p class="desc">食物作为情感容器，固定机位让观众与角色共享一张餐桌。</p></div>
+      </article>
+      <article class="film-card">
+        <div class="film-cover c8"><div class="glow"></div><span class="rate">8.8</span></div>
+        <div class="film-body"><h3>无声证人</h3><div class="sub">悬疑 / 2026</div><p class="desc">以听觉替代视觉推动叙事，沉默的间隙比对白更令人屏息。</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section spoiler-free" id="spoiler">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <h2>无剧透片单 · 放心收藏</h2>
+        <p>所有推荐只讲风格、情绪与适合人群，不泄露关键剧情与反转，让你把惊喜留给第一次观看。</p>
+      </div>
+      <a class="more" href="#entry">更多片单 →</a>
+    </div>
+    <div class="list-cols">
+      <div class="list-card">
+        <div class="kind">MOOD · 情绪向</div>
+        <h3>适合一个人静静看</h3>
+        <ul>
+          <li><span class="name"><b>雾中风景</b> · 成长公路</span><span class="meta">治愈 9.2</span></li>
+          <li><span class="name"><b>雨季不再来</b> · 青春回忆</span><span class="meta">文艺 8.6</span></li>
+          <li><span class="name"><b>远方的寂静</b> · 独处哲学</span><span class="meta">慢节奏 8.8</span></li>
+          <li><span class="name"><b>纸上月光</b> · 书信爱情</span><span class="meta">温柔 8.5</span></li>
+        </ul>
+      </div>
+      <div class="list-card">
+        <div class="kind">CRAFT · 技术向</div>
+        <h3>镜头与声音值得拉片</h3>
+        <ul>
+          <li><span class="name"><b>一镜到底之城</b> · 长镜头调度</span><span class="meta">摄影 9.0</span></li>
+          <li><span class="name"><b>分贝以下</b> · 声音设计</span><span class="meta">音效 8.9</span></li>
+          <li><span class="name"><b>色域迷宫</b> · 色彩叙事</span><span class="meta">美术 8.7</span></li>
+          <li><span class="name"><b>剪辑的呼吸</b> · 节奏控制</span><span class="meta">剪辑 8.8</span></li>
+        </ul>
+      </div>
+      <div class="list-card">
+        <div class="kind">NIGHT · 深夜向</div>
+        <h3>越看越清醒的烧脑</h3>
+        <ul>
+          <li><span class="name"><b>第七层梦境</b> · 嵌套结构</span><span class="meta">烧脑 9.1</span></li>
+          <li><span class="name"><b>不在场的人</b> · 身份谜题</span><span class="meta">悬疑 8.7</span></li>
+          <li><span class="name"><b>时间折叠处</b> · 非线性叙事</span><span class="meta">科幻 8.9</span></li>
+          <li><span class="name"><b>证词之外</b> · 罗生门叙述</span><span class="meta">推理 8.6</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="craft">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <h2>镜头语言 · 看见画面之外</h2>
+        <p>从构图、运镜、布光到色彩与声音，拆解导演如何用视听语言说话，而不只是讲故事。</p>
+      </div>
+    </div>
+    <div class="two-col">
+      <div class="feature">
+        <div class="ico">🎬</div>
+        <div>
+          <h3>构图与景别</h3>
+          <p>为什么这个角色被放在画面边缘？特写何时出现才最有力量？我们用片例逐帧拆解。</p>
+          <ul><li>三分法与打破平衡</li><li>特写的情绪放大机制</li><li>空镜头如何参与叙事</li></ul>
+        </div>
+      </div>
+      <div class="feature">
+        <div class="ico">🎥</div>
+        <div>
+          <h3>运镜与节奏</h3>
+          <p>推、拉、摇、移、跟，每一种运动都在引导观众的注意力与情绪曲线。</p>
+          <ul><li>长镜头的现场感与压迫感</li><li>手持摄影的真实与不安</li><li>剪辑点如何决定呼吸</li></ul>
+        </div>
+      </div>
+      <div class="feature">
+        <div class="ico">💡</div>
+        <div>
+          <h3>布光与色彩</h3>
+          <p>明暗对比塑造人物，色调变化暗示转折，光是摄影机之外的第二支笔。</p>
+          <ul><li>伦勃朗光与人物性格</li><li>冷暖色调的情绪对位</li><li>高饱和与低饱和的叙事选择</li></ul>
+        </div>
+      </div>
+      <div class="feature">
+        <div class="ico">🔊</div>
+        <div>
+          <h3>声音与表演</h3>
+          <p>环境音、配乐与留白共同构建声场；演员的一个停顿往往胜过十句台词。</p>
+          <ul><li>画外音的叙事功能</li><li>静默时刻的张力</li><li>微表情与身体语言</li></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section topics" id="topics">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <h2>影视专题 · 按主题深度漫游</h2>
+        <p>把散落在片单里的作品串成线索：一个导演、一种类型、一个母题，系统地看。</p>
+      </div>
+      <a class="more" href="#entry">全部专题 →</a>
+    </div>
+    <div class="topic-grid">
+      <article class="topic t1">
+        <div class="cat">DIRECTOR 作者专题</div>
+        <h3>凝视日常的诗人：是枝裕和作品全解</h3>
+        <p>从《幻之光》到最新作，看他如何用固定机位与家庭餐桌，拍出现代人的情感褶皱。</p>
+      </article>
+      <article class="topic t2">
+        <div class="cat">ANIME 动画专题</div>
+        <h3>手绘余晖：吉卜力之后的日本动画</h3>
+        <p>年轻创作者如何继承与反叛，在 CG 时代坚守温度。</p>
+      </article>
+      <article class="topic t3">
+        <div class="cat">GENRE 类型专题</div>
+        <h3>新黑色电影的回潮</h3>
+        <p>阴影、雨夜与道德灰色地带，在新世纪如何被重新书写。</p>
+      </article>
+      <article class="topic t4">
+        <div class="cat">CHARACTER 角色专题</div>
+        <h3>角色关系梳理图谱</h3>
+        <p>用关系图理清群像剧的人物羁绊，不再脸盲。</p>
+      </article>
+      <article class="topic t5">
+        <div class="cat">THEME 母题专题</div>
+        <h3>公路片：永远在路上</h3>
+        <p>从《逍遥骑士》到亚洲新电影，旅程如何成为自我寻找的隐喻。</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="behind">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <h2>幕后制作 · 一部作品如何诞生</h2>
+        <p>剧本、分镜、选角、现场、后期——记录创作者把想法变成画面的全过程。</p>
+      </div>
+    </div>
+    <div class="two-col">
+      <div class="feature">
+        <div class="ico">📝</div>
+        <div>
+          <h3>剧本与分镜</h3>
+          <p>一页剧本如何变成一叠分镜表，场记板后的文字游戏与结构设计。</p>
+        </div>
+      </div>
+      <div class="feature">
+        <div class="ico">🎭</div>
+        <div>
+          <h3>选角与排演</h3>
+          <p>导演如何与演员建立信任，即兴与剧本之间的那条线在哪里。</p>
+        </div>
+      </div>
+      <div class="feature">
+        <div class="ico">🎨</div>
+        <div>
+          <h3>美术与服化道</h3>
+          <p>场景里的每一件道具都在说话，时代感与人物性格由细节搭建。</p>
+        </div>
+      </div>
+      <div class="feature">
+        <div class="ico">✂️</div>
+        <div>
+          <h3>剪辑与声音后期</h3>
+          <p>剪辑台上的第二次创作，配乐与混音如何把素材推向完成。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section topics" id="community">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <h2>影评社区 · 让热爱被看见</h2>
+        <p>与同好交流观感，从短评到长评，每一种表达都值得被认真对待。</p>
+      </div>
+      <a class="more" href="#entry">加入讨论 →</a>
+    </div>
+    <div class="community">
+      <div>
+        <article class="review">
+          <div class="review-head">
+            <div class="avatar">林</div>
+            <div class="who"><b>林深时见鹿</b><span>资深影迷 · 3 小时前</span></div>
+          </div>
+          <h3>《潮汐之间》：克制是最深的浪漫</h3>
+          <p>导演没有给任何一个情绪一个明确的出口，而是让它像潮水一样漫上来又退下去。配乐用得极省，省下的空间全给了海风和呼吸声，这种留白反而让我在散场后坐了很久。</p>
+        </article>
+        <article class="review">
+          <div class="review-head">
+            <div class="avatar">陈</div>
+            <div class="who"><b>陈默的分镜本</b><span>动画从业者 · 昨天</span></div>
+          </div>
+          <h3>《星尘维修工》作画赏析：线条里的重量感</h3>
+          <p>主角在失重环境下的每一帧动作都做了惯性延迟，原画团队显然研究了真实的太空 footage。最打动我的是维修工具碰撞时的金属颤音，声画同步精确到帧，值得动画人拉片学习。</p>
+        </article>
+        <article class="review">
+          <div class="review-head">
+            <div class="avatar">苏</div>
+            <div class="who"><b>苏小观影</b><span>电视剧解析博主 · 2 天前</span></div>
+          </div>
+          <h3>《夜航档案》结构拆解：视角即真相</h3>
+          <p>八集八种叙事人称，每次切换都在改写观众对同一事件的理解。建议二刷时留意第一集里被忽略的环境音，那是全剧最早的伏笔。</p>
+        </article>
+      </div>
+      <aside class="side-card" aria-label="社区热议榜">
+        <h3>🔥 本周热议榜</h3>
+        <div class="rank-item"><span class="rank-no">1</span><div class="info"><b>《潮汐之间》</b><span>镜头语言 · 3,214 讨论</span></div></div>
+        <div class="rank-item"><span class="rank-no">2</span><div class="info"><b>《星尘维修工》</b><span>动画赏析 · 2,876 讨论</span></div></div>
+        <div class="rank-item"><span class="rank-no">3</span><div class="info"><b>《夜航档案》</b><span>电视剧解析 · 2,540 讨论</span></div></div>
+        <div class="rank-item"><span class="rank-no">4</span><div class="info"><b>无剧透片单合集</b><span>电影推荐 · 2,108 收藏</span></div></div>
+        <div class="rank-item"><span class="rank-no">5</span><div class="info"><b>是枝裕和专题</b><span>影视专题 · 1,932 阅读</span></div></div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="entry">
+  <div class="container">
+    <div class="cta-band">
+      <h2>现在，进入噜噜社在线版</h2>
+      <p>电脑、平板、折叠屏、手机都能清晰浏览；一键切换昼夜模式，把片单、专题与解析带在身边，沿着光影继续出发。</p>
+      <div class="hero-actions" style="justify-content:center">
+        <a class="btn btn-primary" href="/">▶ 立即在线浏览</a>
+        <a class="btn btn-ghost" href="#community">💬 进入影评社区</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <div class="brand" style="margin-bottom:12px"><span class="logo">噜</span><span>噜噜社·在线版</span></div>
+        <p style="font-size:.86rem;margin:0;max-width:300px">让每一帧光影都抵达热爱的人。专注电影、电视剧、动画与影像创作内容的分享与解析。</p>
+      </div>
+      <div>
+        <h4>内容导航</h4>
+        <a href="#films">电影推荐</a>
+        <a href="#films">电视剧解析</a>
+        <a href="#films">动画赏析</a>
+        <a href="#topics">影视专题</a>
+      </div>
+      <div>
+        <h4>深度栏目</h4>
+        <a href="#craft">镜头语言</a>
+        <a href="#behind">幕后制作</a>
+        <a href="#spoiler">无剧透片单</a>
+        <a href="#community">影评社区</a>
+      </div>
+      <div>
+        <h4>关于噜噜社</h4>
+        <a href="/">关于我们</a>
+        <a href="/">在线视频入口</a>
+        <a href="/">使用条款</a>
+        <a href="/">联系合作</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 噜噜社 LULUSHE · 让每一帧光影都抵达热爱的人</span>
+      <span>电影推荐 · 电视剧解析 · 动画赏析 · 影视专题 · 镜头语言 · 幕后制作 · 无剧透片单 · 影评社区</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var root=document.documentElement;
+  var saved=localStorage.getItem('lulushe-theme');
+  var prefersDark=window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches;
+  if(saved){root.setAttribute('data-theme',saved);}
+  else if(prefersDark){root.setAttribute('data-theme','dark');}
+  var btn=document.getElementById('themeToggle');
+  btn.addEventListener('click',function(){
+    var cur=root.getAttribute('data-theme')==='light'?'light':'dark';
+    var next=cur==='light'?'dark':'light';
+    root.setAttribute('data-theme',next);
+    localStorage.setItem('lulushe-theme',next);
+  });
+  var burger=document.getElementById('burger');
+  var navMobile=document.getElementById('navMobile');
+  burger.addEventListener('click',function(){
+    navMobile.classList.toggle('open');
+  });
+  navMobile.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click',function(){navMobile.classList.remove('open');});
+  });
+})();
+</script>
+</body>
+</html>
